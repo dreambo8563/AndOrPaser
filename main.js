@@ -49,6 +49,6 @@ var data = {
     }
 };
 var ast = (0, parser_1["default"])("((规则3 and 规则1) AND (规则2 or 规则4) or (规则5 and  规则6))");
-// console.log('ast :>> ', JSON.stringify(ast,null,2));
+console.log('ast :>> ', JSON.stringify(ast, null, 2));
 console.log((0, evaluate_1.astString)(ast));
 console.log((0, evaluate_1.evaluate)(ast, data));

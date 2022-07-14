@@ -53,6 +53,6 @@ const data:IContext={
   }
 }
 const ast =parser("((规则3 and 规则1) AND (规则2 or 规则4) or (规则5 and  规则6))")
-// console.log('ast :>> ', JSON.stringify(ast,null,2));
+console.log('ast :>> ', JSON.stringify(ast,null,2));
 console.log(astString(ast));
 console.log( evaluate(ast,data));
